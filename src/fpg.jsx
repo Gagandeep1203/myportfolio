@@ -58,7 +58,7 @@ function Fpg() {
     function anglefun(mx, mv, ax, av) {
       let dx = mx - ax;
       let dv = mv - av;
-      let degree = (Math.atan2(dv, dx) * 180) / Math.PI; // Calculate the angle in degrees
+      let degree = (Math.atan2(dv, dx) * 184) / Math.PI; // Calculate the angle in degrees
       return degree;
     }
 
