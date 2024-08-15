@@ -1,0 +1,137 @@
+header {
+  width: 100vw;
+  height: 14vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
+.lef {
+  width: 20vw;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  left: -30px;
+}
+.divider {
+  position: absolute;
+  display: flex;
+  width: 1px;
+  height: 100%;
+  background-color: black;
+  right: 49%;
+}
+.logo {
+  display: flex;
+}
+.homec1 {
+  height: 49%;
+  width: 100%;
+}
+.homec2 {
+  height: 49%;
+  width: 100%;
+  position: relative;
+  left: -25px;
+}
+.menu {
+  position: absolute;
+  right: 0px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  transition: 0.4s ease;
+}
+.menu span {
+  transition: transform 0.7s ease;
+}
+
+.menu:hover span {
+  cursor: pointer;
+  gap: 10px;
+  transform: translateY(-5px);
+  -webkit-box-reflect: below -10px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+}
+.rig {
+  margin-right: 2px;
+  right: 2px;
+  width: 20vw;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hm {
+  height: 20%;
+  width: 17%;
+}
+/* socialmedia css */
+.consocial {
+  width: 100vw;
+  height: 100vh;
+  background-color: #02412f;
+  position: relative;
+  background-image: url(../img/8411810.jpg);
+  background-size: cover;
+}
+.hr {
+  border: 1px solid black;
+  position: relative;
+  margin-left: 10px;
+  width: 70vw;
+  height: 1px;
+  background-color: black;
+  animation: come 1.7s ease-in 1;
+}
+@keyframes come {
+  0% {
+    opacity: 0;
+    left: 1000px;
+    width: 10vw;
+  }
+  30% {
+    left: 0px;
+    opacity: 1;
+  }
+  100% {
+    left: 0px;
+    opacity: 1;
+    width: 70vw;
+  }
+}
+.iconbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  height: 30%;
+  width: 39vw;
+  margin-left: 70px;
+  animation: come2 2s ease-in 1;
+}
+@keyframes come2 {
+  0% {
+    opacity: 0;
+    left: 30px;
+  }
+
+  49% {
+    opacity: 0;
+    left: 30px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+.iconbar img {
+  width: 50%;
+
+  height: 100%;
+}

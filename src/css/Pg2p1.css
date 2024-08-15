@@ -1,0 +1,56 @@
+.conpg2 {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #aadcec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.span {
+  z-index: 4;
+}
+.linecon {
+  z-index: 0;
+  position: absolute;
+  top: 79%;
+  background-color: #aadcec; /* Adjust this value to keep it within the viewport initially */
+}
+.span {
+  margin-bottom: 20vh;
+}
+.linepar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 38vh;
+  z-index: 1;
+  background-color: #aadcec;
+  position: absolute;
+  left: 40px;
+
+  animation: fd linear forwards;
+  animation-timeline: view();
+}
+@keyframes fd {
+  0% {
+    top: 40px;
+    transform: scale(1);
+    opacity: 1;
+  }
+  20% {
+    top: 40px;
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    top: -90px;
+    transform: scale(0.8);
+    opacity: 1;
+  }
+}
+
+.line {
+  width: 1px;
+  background-color: rgb(0, 0, 0);
+  height: 100%;
+}

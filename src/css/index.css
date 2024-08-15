@@ -4,16 +4,16 @@
 }
 
 body {
-  padding: 10px;
-  margin: 0;
+  padding: 0px;
+  margin: 10px;
   display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 70vh;
 }
 .page {
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
 }
 
 h1 {
@@ -21,9 +21,11 @@ h1 {
   line-height: 1.1;
 }
 .pg1 {
-  height: 80vh;
+  position: relative;
+  height: 60vh;
   width: 100vw;
-  background-color: #f4f9fc;
+  z-index: 3;
+  background-color: #aadcec;
 }
 
 .cnn {
@@ -58,8 +60,9 @@ h1 {
 }
 
 .e12 {
-  width: 17vw;
-  height: 17vw;
+  gap: 7px;
+  width: 22vw;
+  height: 22vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,6 +87,8 @@ h1 {
 
 .e1,
 .e2 {
-  width: 100%;
-  height: auto;
+  width: 33%;
+  height: 33%;
+  position: relative;
+  top: -17px;
 }

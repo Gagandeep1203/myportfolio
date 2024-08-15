@@ -1,0 +1,19 @@
+.pg22 {
+  position: relative;
+  top: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: #aadcec;
+  animation: downmenu 0.4s ease-in 1;
+}
+@keyframes downmenu {
+  0% {
+    top: -400px;
+    opacity: 0;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}

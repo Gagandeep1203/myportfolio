@@ -1,0 +1,46 @@
+.con {
+  background-color: aliceblue;
+  width: 100vw;
+  height: 100vh;
+  border: 2px solid black;
+  z-index: 4;
+  background-image: url(../img/8411810.jpg);
+  background-size: cover;
+}
+
+.kaua {
+  animation: cloud 10s linear infinite;
+  position: relative;
+  margin-top: 30px;
+}
+h1 {
+  color: #26042c;
+  z-index: 1;
+  font-size: 2rem;
+  font-weight: bolder;
+
+  position: absolute;
+  left: 40%;
+}
+
+@keyframes cloud {
+  0% {
+    top: 0px;
+    left: -100px;
+  }
+  50% {
+    top: 10px;
+    left: 50%;
+  }
+  100% {
+    top: 0px;
+    left: 101%;
+  }
+}
+.clouds img {
+  background-color: #ffb2b200;
+
+  z-index: 3;
+  width: 10vw;
+  height: 20%;
+}
