@@ -9,7 +9,7 @@ function Pg4() {
       <div className="con">
         <div className="clouds ">
           <img className="kaua" src={kaua} alt="" />
-          <h1>My Portfolio</h1>
+          <h1 className="p4h1">My Portfolio</h1>
         </div>
       </div>
     </>

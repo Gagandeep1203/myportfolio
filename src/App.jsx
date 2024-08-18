@@ -4,8 +4,8 @@ import Navbar from "./compnent/nav";
 import Menu from "./pages/pg2";
 import React from "react";
 import { useState } from "react";
-import Pg4 from "./pages/pg4.jsx";
 import Pg2p1 from "./pages/pg2p1.jsx";
+import Proj from "./pages/proj.jsx";
 
 function App() {
   const [nv, setnv] = useState(false);
@@ -24,9 +24,7 @@ function App() {
           {" "}
           <Fpg onLogoClick={nvsetter} color="red" />
           <Pg2p1></Pg2p1>
-          <div className="page">4</div>
-          <div className="page">7</div>
-          <Pg4></Pg4>
+          <Proj></Proj>
         </>
       )}
     </>

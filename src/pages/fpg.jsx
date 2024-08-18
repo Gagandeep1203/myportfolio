@@ -126,8 +126,46 @@ export default Fpg;
 import Navbar from "../compnent/nav";
 import React, { useEffect } from "react";
 import img1 from "../img/12208.png";
+import Typed from "typed.js"; // Import Typed.js
 
 function Fpg({ onLogoClick }) {
+  useEffect(() => {
+    const typed = new Typed("#element", {
+      strings: ["<i>Frontend</i> developer", "<i>Backend</i> developer"],
+      typeSpeed: 50,
+    });
+
+    return () => {
+      // Destroy the instance to avoid memory leaks
+      typed.destroy();
+    };
+  }, []);
+  useEffect(() => {
+    function handleMouseMove(event) {
+      const { clientX, clientY } = event;
+      const centerX = window.innerWidth / 2;
+      const centerY = window.innerHeight / 2;
+
+      const offsetX = (clientX - centerX) / centerX;
+      const offsetY = (clientY - centerY) / centerY;
+
+      const children = document.querySelectorAll(".pg1 > *");
+
+      children.forEach((child, index) => {
+        const intensity = (index + 1) * 0.2; // Adjust intensity based on child index
+        const translateX = offsetX * intensity * 60; // Modify 20 for translation distance
+        const translateY = offsetY * intensity * 60;
+
+        child.style.transform = `translate(${translateX}px, ${translateY}px)`;
+      });
+    }
+
+    window.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
   useEffect(() => {
     const e12 = document.querySelectorAll(".move");
 
@@ -165,21 +203,23 @@ function Fpg({ onLogoClick }) {
 
   return (
     <>
-      <Navbar onLogoClic={onLogoClick} color="#02412f"></Navbar>
-      <div className="pg1">
-        <div className="cnn">
-          <div className="bld">
-            hii! my <br />
-            ​name is
-            <span className="name">&nbsp;Gagan</span>
-            <p className="nbld">
-              I'm an <b>independent creative developer</b> from Chandigarh.
-            </p>
-          </div>
+      <div className="confpg">
+        <Navbar onLogoClic={onLogoClick} color="#02412f"></Navbar>
+        <div className="pg1">
+          <div className="cnn">
+            <div className="bld">
+              hii! my <br />
+              ​name is
+              <span className="name">&nbsp;Gagan</span>
+              <p className="nbld">
+                I'm a <span id="element"> </span>
+              </p>
+            </div>
 
-          <div className="e12 focus">
-            <img className="e1 move" src={img1} alt="kk" />
-            <img className="e2 move" src={img1} alt="" />
+            <div className="e12 focus">
+              <img className="e1 move" src={img1} alt="kk" />
+              <img className="e2 move" src={img1} alt="" />
+            </div>
           </div>
         </div>
       </div>

@@ -145,13 +145,40 @@ export default Navbar;
 */
 
 import React, { useState } from "react";
+import { useEffect } from "react";
 import home from "../img/lib.svg";
 import hireme from "../img/message-square-lines-alt-svgrepo-com (1).svg";
 import "../css/Navbar.css";
 
 function Navbar({ color, onLogoClic }) {
+  useEffect(() => {
+    function handleMouseMove(event) {
+      const { clientX, clientY } = event;
+      const centerX = window.innerWidth / 2;
+      const centerY = window.innerHeight / 2;
+
+      const offsetX = (clientX - centerX) / centerX;
+      const offsetY = (clientY - centerY) / centerY;
+
+      const children = document.querySelectorAll(".header > *");
+
+      children.forEach((child, index) => {
+        const intensity = (index + 1) * 0.2; // Adjust intensity based on child index
+        const translateX = offsetX * intensity * 60; // Modify 20 for translation distance
+        const translateY = offsetY * intensity * 60;
+
+        child.style.transform = `translate(${translateX}px, ${translateY}px)`;
+      });
+    }
+
+    window.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
   return (
-    <header style={{ backgroundColor: "#aadcec" }}>
+    <header className="header" style={{ backgroundColor: "#aadcec" }}>
       <div className="lef">
         <div className="logo" onClick={onLogoClic}>
           <img src={home} className="homec1" alt="" />
