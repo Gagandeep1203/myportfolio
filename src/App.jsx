@@ -6,6 +6,7 @@ import React from "react";
 import { useState } from "react";
 import Pg2p1 from "./pages/pg2p1.jsx";
 import Proj from "./pages/proj.jsx";
+import Footer from "./compnent/footer.jsx";
 
 function App() {
   const [nv, setnv] = useState(false);
@@ -25,6 +26,7 @@ function App() {
           <Fpg onLogoClick={nvsetter} color="red" />
           <Pg2p1></Pg2p1>
           <Proj></Proj>
+          <Footer></Footer>
         </>
       )}
     </>

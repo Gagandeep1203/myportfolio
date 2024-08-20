@@ -1,7 +1,150 @@
+body {
+  overflow-x: hidden;
+}
 #prjh1 {
   color: black;
 }
+section {
+  width: 100vw;
+}
 .prjverpg1 {
   background-color: rgb(34, 27, 27);
+  height: 90vh;
+}
+.chipkupar {
+  background-color: rgb(195, 215, 21);
+  height: 300vh;
+}
+.chipku {
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  background-color: rgb(21, 215, 118);
   height: 100vh;
+  overflow: hidden;
+  width: 300vw;
+}
+.scrollsec {
+  scroll-behavior: smooth;
+  position: relative;
+  background-color: rgb(215, 21, 131);
+  height: 100vh;
+  will-change: transform;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: hidden;
+}
+.elem {
+  border: 2px solid black;
+  width: 100vw;
+  height: 100%;
+}
+.red {
+  background-color: black;
+  width: 100vw;
+}
+.whi {
+  background-color: rgb(232, 232, 232);
+}
+.blue {
+  background-color: rgb(92, 21, 215);
+}
+.projh1 {
+  position: relative;
+  font-size: 9rem;
+  font-weight: bolder;
+  background-image: url(../img/mountains-landscape-during-sunset-background-with-lake-sunlit-dark-peaks-flat-vector-illustration_1284-75780.jpg);
+  background-size: cover;
+  color: transparent;
+  -webkit-background-clip: text;
+}
+.projh1par {
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100%;
+
+  font-weight: bolder;
+  background-image: url(../img/mountains-landscape-during-sunset-background-with-lake-sunlit-dark-peaks-flat-vector-illustration_1284-75780.jpg);
+  background-size: contain;
+  color: transparent;
+  -webkit-background-clip: text;
+}
+.spficon {
+  position: relative;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid black;
+  border-radius: 20px;
+  height: 90%;
+  background-image: url(../img/images.png);
+  object-fit: contain;
+}
+.spfiimg {
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+  height: 90%;
+  width: 30%;
+  background-image: url(../img/istockphoto-1078105518-612x612.jpg);
+  cursor: pointer;
+}
+.spfiimg:hover {
+  transform: scale(1.003);
+}
+
+.spfiimg img {
+  position: relative;
+
+  margin: 10px;
+  border-radius: 20px;
+  height: 70%;
+  width: 80%;
+  background-image: url(../img/istockphoto-1078105518-612x612.jpg);
+}
+.spfispan span {
+  color: blanchedalmond;
+}
+.lasheading h1 {
+  font-size: 8rem;
+  background-image: url(../img/downloa.png);
+  background-size: contain;
+  color: transparent;
+  -webkit-background-clip: text;
+  position: relative;
+  top: 50%;
+}
+.spfispan {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  margin: 10px;
+  background-color: rgb(20, 14, 14);
+  border: 2px solid rgb(242, 235, 235);
+  border-radius: 20px;
+  height: 90%;
+  width: 50%;
+}
+.spfispan:hover {
+}
+.black {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 60vh;
+}
+.white {
+  background-color: antiquewhite;
+  height: 1vh;
 }
