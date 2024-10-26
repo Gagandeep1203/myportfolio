@@ -1,0 +1,28 @@
+ 
+.mailcon  > *{
+  border: 2px solid black;
+}  
+
+ 
+.mailcon {
+  background-color: #1c1717;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 50vh;
+} 
+.mailcon div { 
+  height: 100%;
+  width: 30%;
+  background-color: rgb(32, 26, 19);
+  padding: 2rem;
+border-radius: 20px;
+margin-bottom: 14rem;
+ } 
+ form input, form select, form textarea, form button {
+  display: block; 
+  width: 100%;    
+  border-radius: 4px; 
+  margin-bottom: 10px;  
+  background-color: beige;
+}

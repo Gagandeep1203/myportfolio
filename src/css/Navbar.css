@@ -1,0 +1,212 @@
+header {
+  width: 100vw;
+  height: 14vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
+.lef {
+  width: 20vw;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  left: -30px;
+}
+.divider {
+  position: absolute;
+  display: flex;
+  width: 1px;
+  height: 100%;
+  background-color: black;
+  right: 49%;
+}
+.logo {
+  display: flex;
+}
+.homec1 {
+  height: 49%;
+  width: 100%;
+}
+.homec2 {
+  height: 49%;
+  width: 100%;
+  position: relative;
+  left: -25px;
+}
+.menu {
+  position: absolute;
+  right: 0px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  transition: 0.4s ease;
+}
+.menu span {
+  transition: transform 0.7s ease;
+}
+
+.menu:hover span {
+  cursor: pointer;
+  gap: 10px;
+  transform: translateY(-5px);
+  -webkit-box-reflect: below -10px linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+}
+.rig {
+  margin-right: 2px;
+  right: 2px;
+  width: 20vw;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hm {
+  height: 20%;
+  width: 17%;
+}
+/* socialmedia css */
+.consocial {
+  width: 100vw;
+  height: 100vh; 
+  background-color: rgb(255 228 228);
+  position: relative;
+  
+  background-size: cover;
+}
+.hr {
+  border: 1px solid black;
+  position: relative;
+  margin-left: 10px;
+  width: 70vw;
+  height: 1px;
+  background-color: black;
+  animation: come 1.7s ease-in 1;
+}
+@keyframes come {
+  0% {
+    opacity: 0;
+    left: 1000px;
+    width: 10vw;
+  }
+  30% {
+    left: 0px;
+    opacity: 1;
+  }
+  100% {
+    left: 0px;
+    opacity: 1;
+    width: 70vw;
+  }
+}
+.iconbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  height: 30%;
+  width: 39vw;
+  margin-left: 70px;
+  animation: come2 2s ease-in 1;
+}
+@keyframes come2 {
+  0% {
+    opacity: 0;
+    left: 30px;
+  }
+
+  49% {
+    opacity: 0;
+    left: 30px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+.iconbar img {
+  width: 50%;
+
+  height: 100%;
+} 
+
+
+
+
+.download-btn {
+  display: flex; /* Ensures it behaves like a button */
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  width: 6rem;
+  cursor: pointer;
+  margin-left: 5rem;
+  background: #262661;
+  border: none; /* Not applicable for <a> but included for clarity */
+  border-radius: 30px;
+  text-decoration: none; /* Remove underline */
+  color: white; /* Set text color */
+  overflow: hidden;
+  position: relative; /* Needed for button-content positioning */
+}
+
+.button-content {
+  transform: translateY(-45px);
+  transition: all 250ms ease-in-out;
+ 
+}
+
+.svg-container,
+.text-container {
+  height: 45px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.text-container .text {
+  font-size: 13px;
+  color: #fff;
+  font-weight: 600;
+  opacity: 1;
+  transition: opacity ease-in-out 250ms;
+  position: relative;
+  top: 20px;
+  
+}
+
+.download-icon {
+  height: 25px;
+  width: 25px;
+  fill: #fff;
+  opacity: 0;
+  transition: opacity ease-in-out 250ms;
+  
+}
+
+/* Hover state for the button */
+.download-btn:hover .button-content {
+  transform: translateY(0px);
+}
+
+.download-btn:hover .text {
+  opacity: 0;
+}
+
+.download-btn:hover .download-icon {
+  opacity: 1;
+  position: relative;
+  top: 20px;
+}
+
+.download-btn:focus .download-icon {
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
