@@ -85,7 +85,7 @@ function Fpg({ onLogoClick }) {
         <div className="pg1">
           <div className="cnn">
             <div className="bld">
-              hii! my <br />
+              Hello! my <br />
               ​name is
               <span className="name">&nbsp;Gagan</span>
               <p className="nbld">
