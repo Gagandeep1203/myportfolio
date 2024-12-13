@@ -7,68 +7,67 @@
   animation: clr linear forwards;
   animation-timeline: view();
   animation-range: 70% 90%;
+  color: #e6e6ac;
+
 }
-.conpg2 {
-<<<<<<< HEAD
-  min-height: 140vh;
+.conpg2 { 
+  min-height: 148vh;
   min-width: 100vw;
   width: 100vw; 
-=======
-  min-height: 88vh;
-  min-width: 100vw;
-  width: 100vw;
->>>>>>> ecaf63186867df9c3944ae9d2ae7fde6c0ec63c9
 
-  background-color: #aadcec;
+  background-color: #0B1215;
   display: flex;
   justify-content: center;
   align-items: center;
 
   animation: clr linear forwards;
   animation-timeline: view();
-<<<<<<< HEAD
-  animation-range: 70% 77%;
-}
-
-
-.span {
-  z-index: 4;
-  margin-top: 1rem;
-
-=======
+ 
   animation-range: 70% 90%;
 }
 @keyframes clr {
   from {
-    background-color: #aadcec;
+    background-color: #0B1215
   }
   to {
     background-color: rgb(34, 27, 27);
   }
 }
 
-.span {
-  z-index: 4;
->>>>>>> ecaf63186867df9c3944ae9d2ae7fde6c0ec63c9
+.span { 
+  z-index: 3; 
+  animation: hov 2s infinite 2s linear; 
+  position: relative;
+}
+@keyframes hov {
+  0% {
+    transform: translateY(0);
+}
+
+50% {
+    transform: translateY(-17px);
+}
+
+100% {
+    transform: translateY(0);
+}
 }
 .linecon {
-  z-index: 1;
+  z-index: 3;
   position: absolute;
-  top: 79%;
-<<<<<<< HEAD
-  margin-top: 2rem;
-  background-color: #aadcec; 
-=======
-  background-color: #aadcec;
->>>>>>> ecaf63186867df9c3944ae9d2ae7fde6c0ec63c9
+  top: 83%; 
+  margin-top: 2rem; 
+ color: aliceblue;
+  background-color: #0B1215; 
 }
 .linepar {
+  z-index: 3;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 38vh;
   width: 100%;
-  background-color: #aadcec;
+  background-color: #0B1215;
   position: absolute;
 
   animation: fd linear forwards;
@@ -76,7 +75,7 @@
 }
 @keyframes fd {
   0% {
-    top: 40px;
+    top: 60px;
     height: 38vh;
     opacity: 1;
   }
@@ -94,15 +93,13 @@
 
 .line {
   width: 1px;
-  background-color: rgb(0, 0, 0);
-<<<<<<< HEAD
-  height: 100%; 
-=======
-  height: 100%;
->>>>>>> ecaf63186867df9c3944ae9d2ae7fde6c0ec63c9
+  background-color: rgb(248, 248, 248);
+ 
+  height: 100%;  
 }
+  
 .conpg2 .work {
-  background-color: #aadcec;
+  background-color: #0B1215;
   display: flex;
   z-index: 1;
   width: 100%;
@@ -122,21 +119,15 @@
   }
 }
 .h1andspan {
-  background-color: #aadcec;
+  background-color:  #0B1215;
   width: 60%;
   height: 100%;
-  z-index: 3;
-<<<<<<< HEAD
-  margin-top: 0rem;
-  animation: show linear forwards ;
-  animation-timing-function: ease-out;
-  animation-timeline: view();
-  animation-range: -10% 90%;
-
-}
+  z-index: 3; 
+  margin-top:  12rem; 
+} 
 @keyframes show {
   0% { 
-    height: 38vh;
+    height: 32vh;
     opacity: 0;
   }
   27% { 
@@ -151,14 +142,10 @@
     top: -90px;
     opacity: 1;
   }
-}
-
-=======
-}
->>>>>>> ecaf63186867df9c3944ae9d2ae7fde6c0ec63c9
+}  
 .workh1 {
   position: relative;
-  color: #aadcec;
+  color: #0B1215;
   z-index: 3;
   font-size: larger;
   font-weight: bolder;
@@ -168,7 +155,7 @@
   font-family: "Times New Roman", Times, serif;
 }
 .workspan {
-  background-color: #aadcec;
+  background-color: #0B1215;
   z-index: 3;
   position: relative;
   width: 100%;
@@ -178,27 +165,38 @@
   animation: clr linear forwards;
   animation-timeline: view();
   animation-range: 70% 90%;
-}
-<<<<<<< HEAD
+} 
 @keyframes clr {
   from {
-    background-color: #aadcec;
+    background-color: #0B1215;
   }
   to {
     background-color: rgb(34, 27, 27);
   }
-}
-=======
->>>>>>> ecaf63186867df9c3944ae9d2ae7fde6c0ec63c9
+} 
 .work .img {
-  background-color: #aadcec;
+  position: relative;
+   
+  background-color: #0B1215;
 }
 .img img {
-  background-color: #aadcec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0B1215;
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 .work > * {
   transition: transform 0.1s ease-out;
+}
+.gelatine {
+  animation: gelatine 0.5s 1;
+}
+@keyframes gelatine {
+  from, to { transform: scale(1, 1); }
+  25% { transform: scale(0.9, 1.1); }
+  50% { transform: scale(1.1, 0.9); }
+  75% { transform: scale(0.95, 1.05); }
 }

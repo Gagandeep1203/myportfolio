@@ -4,20 +4,41 @@
 }  
 
  
-.mailcon {
+.mailcon {position: relative;
   background-color: #1c1717;
  display: flex;
  justify-content: center;
  align-items: center;
  min-height: 50vh;
 } 
+
+.mailpar { 
+
+  position: absolute;
+  width: 100vw; 
+} 
 .mailcon div { 
+  z-index: 100;
+  position: relative;
   height: 100%;
   width: 30%;
-  background-color: rgb(32, 26, 19);
+  background-color: #433c3c;
   padding: 2rem;
 border-radius: 20px;
 margin-bottom: 14rem;
+box-shadow: 2px 4px 2px;
+transition: all .4s;
+ } 
+ .mailcon div:hover { 
+  transform: scale(1.01);
+  height: 100%;
+  width: 30%;
+  background-color: rgb(29, 23, 17);
+  padding: 2rem;
+border-radius: 20px;
+margin-bottom: 14rem;
+box-shadow: 20px 40px 20px;
+
  } 
  form input, form select, form textarea, form button {
   display: block; 
@@ -26,3 +47,89 @@ margin-bottom: 14rem;
   margin-bottom: 10px;  
   background-color: beige;
 }
+.cross1{position: absolute;
+  bottom: 0;
+  left: 0;
+  border: 1px solid wheat;
+  background-color: burlywood;
+  width: 100vw;
+  height: 271vh;
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  z-index:  1;
+ }
+ .cross2{position: absolute;
+  bottom: 0;
+  border: 1px solid wheat;
+  background-color: rgb(102, 61, 7);
+  width: 100vw;
+  height: 270vh;
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+  z-index:  1;
+  right: 0;
+ }
+ @media (max-width: 768px) {
+  .mailcon div {
+    width: 80%; /* Adjust for smaller screens */
+  }
+}
+.cross1, .cross2 {
+  opacity: 0.8;
+}
+form input:focus, form select:focus, form textarea:focus {
+  outline: none;
+  border: 2px solid #007bff;
+  background-color: #f8f8f8;
+}
+.cross1{ 
+  animation: show linear forwards ;
+  animation-timing-function: ease-out;
+  animation-timeline: view(); 
+
+}
+.cross2{ 
+  animation: show2 linear forwards ;
+  animation-timing-function: ease-out;
+  animation-timeline: view(); 
+
+}
+
+
+
+
+
+
+
+
+@keyframes show2 {
+  
+  0% { 
+    clip-path: polygon(100% 0, 0 100%, 100% 100%,100% 100%);
+
+ 
+    
+  }  
+  100% { 
+    clip-path: polygon(100% 0, 0 98%, 100% 100%,1% 50%);
+
+   
+  }
+} 
+
+@keyframes show {
+  0% { 
+    clip-path: polygon(100% 0, 0 100%, 100% 100%,100% 100%);
+
+ 
+    
+  } 
+  50%{
+    clip-path: polygon(100% 0, 0 100%, 100% 100%,0 50%);
+
+
+  }
+  100% { 
+    clip-path: polygon(100% 0, 0 100%, 100% 100%,0 50%);
+
+   
+  }
+} 

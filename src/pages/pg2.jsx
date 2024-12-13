@@ -5,21 +5,19 @@ import home from "../img/lib.svg";
 import hireme from "../img/message-square-lines-alt-svgrepo-com (1).svg";
 
 import Navbar from "../compnent/nav";
+
 function Menu({ onLogoClick }) {
   return (
     <>
       <div className="nav2">
-<<<<<<< HEAD
-        <header style={{ backgroundColor: " rgb(255 209 209) " }}>
-=======
-        <header style={{ backgroundColor: "rgb(34, 27, 27)" }}>
->>>>>>> ecaf63186867df9c3944ae9d2ae7fde6c0ec63c9
+        <header style={{ backgroundColor: "#aadcec" }}>
           <div className="lef">
-            <div className="logo" onClick={onLogoClick}>
-              <img src={home} className="homec1" alt="" />
-              <img src={home} className="homec2" alt="" />
-            </div>
-            <div className="divider"></div>
+            <a href=""> <img src={home} className="homec1"
+  alt="" /> </a>
+
+
+          <div className="divider"></div>
+            <div className="logo" onClick={onLogoClick}> 
             <div className="menu">
               <span>c</span>
               <span>l</span>
@@ -27,17 +25,22 @@ function Menu({ onLogoClick }) {
               <span>s</span>
               <span>e</span>
             </div>
-          </div>
-          <div className="rig">
-            <img src={hireme} className="hm" alt="" />
-            <div className="hiremehd">
-              <span>H .</span>
-              <span>I .</span>
-              <span>R .</span>
-              <span>E .</span>
-              <span> &nbsp; M .</span>
-              <span>E .</span>
             </div>
+            
+           
+          </div>
+          <div className="rig"> 
+          <div className="hiremehd">
+        <a href= "./Gagandeep_Singh_2101594.pdf"   download>  
+        <span>H .</span>
+          <span>I .</span>
+          <span>R .</span>
+          <span>E .</span>
+          <span> &nbsp; M .</span>
+          <span>E .</span>
+        </a>
+         
+        </div>
           </div>
         </header>
       </div>
@@ -47,4 +50,5 @@ function Menu({ onLogoClick }) {
     </>
   );
 }
+
 export default Menu;

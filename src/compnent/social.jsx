@@ -1,3 +1,5 @@
+ 
+
 import "../css/Navbar.css";
 import insta from "../img/socialmedia/insta.svg";
 import linkedln from "../img/socialmedia/linkedln.svg";
@@ -9,21 +11,22 @@ function Social() {
     <div className="consocial">
       <div className="hr"></div>
       <div className="iconbar">
-<<<<<<< HEAD
         <a href="https://www.instagram.com/gagan_deep27?igsh=eHpoM2IxdjIwZHRp">
-          <img src={insta} alt="" />
+          <img src={insta} alt="https://www.instagram.com/gagan_deep27?igsh=eHpoM2IxdjIwZHRp" />
         </a>
         <a href="https://www.linkedin.com/in/gagandeep-singh-21b333247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-          <img src={linkedln} alt="" />
+          <img src={linkedln} alt="https://www.linkedin.com/in/gagandeep-singh-21b333247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" />
         </a>
         <a href="https://github.com/Gagandeep1203">
-          <img src={git} alt="" />
+          <img src={git} alt="https://github.com/Gagandeep1203" />
         </a>
         <a href="gagan2782003@gmail.com">
-          <img src={mail} alt="" />
+          <img src={mail} alt="gagan2782003@gmail.com" />
         </a>
       </div>
-      <div className="cv">
+          
+       
+<div className="cv">
   <a
     href="./Gagandeep_Singh_2101594.pdf"
     download
@@ -49,23 +52,8 @@ function Social() {
     </div>
   </a>
 </div>
-
-=======
-        <a href="">
-          <img src={insta} alt="" />
-        </a>
-        <a href="">
-          <img src={linkedln} alt="" />
-        </a>
-        <a href="">
-          <img src={git} alt="" />
-        </a>
-        <a href="">
-          <img src={mail} alt="" />
-        </a>
-      </div>
->>>>>>> ecaf63186867df9c3944ae9d2ae7fde6c0ec63c9
     </div>
+
   );
 }
 export default Social;

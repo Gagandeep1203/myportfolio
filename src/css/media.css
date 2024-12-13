@@ -1,0 +1,80 @@
+@media (max-width: 600px) {
+    .bld {
+      font-size: 1.2em;
+    }
+    .bld {
+      font-size: 1.2em;
+    }
+    .bld {
+      font-size: 1.2em;
+    }
+    .bld {
+      font-size: 1.2em;
+    }
+    .bld {
+      font-size: 1.2em;
+    }
+    }
+    @media (max-width: 500px) {
+      .skills {
+        height: 120vh;
+        
+      } 
+      .headd {
+        height: 82vh; 
+        
+      } 
+      
+
+      .projh2 {
+        font-size: 3rem;
+      } 
+      .prjverpg1 { 
+        height: 149vh;
+    }
+      .rig {        top: -7px;
+
+        font-size: 0.7rem;
+      }
+      .lef {
+        font-size: 0.7rem;
+      }
+      .workspan h1 {
+        font-size: 2.2rem;
+      }  
+      .workspan span {
+        font-size: 0.8rem;
+      } 
+      .h1andspan {
+        margin-top: -2rem;
+      }  
+      .vanish{
+        display: none;
+      }  
+
+      }
+      @media (max-width: 800px) {
+        .projh2 {
+          font-size: 3rem;
+        } 
+        .skills {
+          height: 140vh;
+          padding-bottom: 2rem;
+          z-index: 8;
+          
+        } 
+        .head h1{
+          font-size: 2.2rem;
+           
+          
+        } 
+        .headd { 
+
+          height: 136vh;
+      }
+        .projin{ 
+           top: 1rem;
+           padding:0rem 2rem;
+          
+        } 
+        }

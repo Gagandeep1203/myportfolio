@@ -3,14 +3,11 @@
   top: 0;
   z-index: 100;
   width: 100vw;
-<<<<<<< HEAD
-  height: 130vh;
-=======
-  height: 100vh;
->>>>>>> ecaf63186867df9c3944ae9d2ae7fde6c0ec63c9
-  background-color: #aadcec;
-  animation: downmenu 0.4s ease-in 1;
+  height: 120vh; /* Adjusted height to 100vh for full viewport height */
+  background-color: #0B1215;
+  animation: downmenu 0.4s ease-in 1; /* Animation for dropdown menu effect */
 }
+
 @keyframes downmenu {
   0% {
     top: -400px;
