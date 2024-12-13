@@ -13,12 +13,20 @@ body {
   display: flex;
   place-items: center;
   min-width: 320px;
+<<<<<<< HEAD
   min-height: 100vh;
   cursor: none;
 }
 .page {
   width: 100vw;
   height: 120vh;
+=======
+  min-height: 70vh;
+}
+.page {
+  width: 100vw;
+  height: 70vh;
+>>>>>>> ecaf63186867df9c3944ae9d2ae7fde6c0ec63c9
 }
 
 h1 {
@@ -27,9 +35,15 @@ h1 {
 }
 .pg1 {
   position: relative;
+<<<<<<< HEAD
   height: 90vh;
   width: 100vw;
   z-index: 1;
+=======
+  height: 60vh;
+  width: 100vw;
+  z-index: 3;
+>>>>>>> ecaf63186867df9c3944ae9d2ae7fde6c0ec63c9
   background-color: #aadcec;
 }
 

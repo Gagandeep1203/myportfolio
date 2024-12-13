@@ -180,12 +180,20 @@ function Navbar({ color, onLogoClic }) {
   return (
     <header className="header" style={{ backgroundColor: "#aadcec" }}>
       <div className="lef">
+<<<<<<< HEAD
         <div className="logo" >
+=======
+        <div className="logo" onClick={onLogoClic}>
+>>>>>>> ecaf63186867df9c3944ae9d2ae7fde6c0ec63c9
           <img src={home} className="homec1" alt="" />
           <img src={home} className="homec2" alt="" />
         </div>
         <div className="divider"></div>
+<<<<<<< HEAD
         <div className="menu" onClick={onLogoClic}>
+=======
+        <div className="menu">
+>>>>>>> ecaf63186867df9c3944ae9d2ae7fde6c0ec63c9
           <span>M</span>
           <span>E</span>
           <span>N</span>
@@ -193,8 +201,20 @@ function Navbar({ color, onLogoClic }) {
         </div>
       </div>
       <div className="rig">
+<<<<<<< HEAD
        
         
+=======
+        <img src={hireme} className="hm" alt="" />
+        <div className="hiremehd">
+          <span>H .</span>
+          <span>I .</span>
+          <span>R .</span>
+          <span>E .</span>
+          <span> &nbsp; M .</span>
+          <span>E .</span>
+        </div>
+>>>>>>> ecaf63186867df9c3944ae9d2ae7fde6c0ec63c9
       </div>
     </header>
   );

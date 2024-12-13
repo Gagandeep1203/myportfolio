@@ -9,9 +9,15 @@
   animation-range: 70% 90%;
 }
 .conpg2 {
+<<<<<<< HEAD
   min-height: 140vh;
   min-width: 100vw;
   width: 100vw; 
+=======
+  min-height: 88vh;
+  min-width: 100vw;
+  width: 100vw;
+>>>>>>> ecaf63186867df9c3944ae9d2ae7fde6c0ec63c9
 
   background-color: #aadcec;
   display: flex;
@@ -20,6 +26,7 @@
 
   animation: clr linear forwards;
   animation-timeline: view();
+<<<<<<< HEAD
   animation-range: 70% 77%;
 }
 
@@ -28,13 +35,32 @@
   z-index: 4;
   margin-top: 1rem;
 
+=======
+  animation-range: 70% 90%;
+}
+@keyframes clr {
+  from {
+    background-color: #aadcec;
+  }
+  to {
+    background-color: rgb(34, 27, 27);
+  }
+}
+
+.span {
+  z-index: 4;
+>>>>>>> ecaf63186867df9c3944ae9d2ae7fde6c0ec63c9
 }
 .linecon {
   z-index: 1;
   position: absolute;
   top: 79%;
+<<<<<<< HEAD
   margin-top: 2rem;
   background-color: #aadcec; 
+=======
+  background-color: #aadcec;
+>>>>>>> ecaf63186867df9c3944ae9d2ae7fde6c0ec63c9
 }
 .linepar {
   display: flex;
@@ -69,7 +95,11 @@
 .line {
   width: 1px;
   background-color: rgb(0, 0, 0);
+<<<<<<< HEAD
   height: 100%; 
+=======
+  height: 100%;
+>>>>>>> ecaf63186867df9c3944ae9d2ae7fde6c0ec63c9
 }
 .conpg2 .work {
   background-color: #aadcec;
@@ -96,6 +126,7 @@
   width: 60%;
   height: 100%;
   z-index: 3;
+<<<<<<< HEAD
   margin-top: 0rem;
   animation: show linear forwards ;
   animation-timing-function: ease-out;
@@ -122,6 +153,9 @@
   }
 }
 
+=======
+}
+>>>>>>> ecaf63186867df9c3944ae9d2ae7fde6c0ec63c9
 .workh1 {
   position: relative;
   color: #aadcec;
@@ -145,6 +179,7 @@
   animation-timeline: view();
   animation-range: 70% 90%;
 }
+<<<<<<< HEAD
 @keyframes clr {
   from {
     background-color: #aadcec;
@@ -153,6 +188,8 @@
     background-color: rgb(34, 27, 27);
   }
 }
+=======
+>>>>>>> ecaf63186867df9c3944ae9d2ae7fde6c0ec63c9
 .work .img {
   background-color: #aadcec;
 }

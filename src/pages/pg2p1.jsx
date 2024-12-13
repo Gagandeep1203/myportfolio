@@ -2,7 +2,10 @@ import React, { useEffect } from "react";
 import "../css/Pg2p1.css";
 import worksvg from "../img/download (2).png";
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ecaf63186867df9c3944ae9d2ae7fde6c0ec63c9
 function Pg2p1() {
   useEffect(() => {
     function handleMouseMove(event) {

@@ -9,7 +9,11 @@ function Menu({ onLogoClick }) {
   return (
     <>
       <div className="nav2">
+<<<<<<< HEAD
         <header style={{ backgroundColor: " rgb(255 209 209) " }}>
+=======
+        <header style={{ backgroundColor: "rgb(34, 27, 27)" }}>
+>>>>>>> ecaf63186867df9c3944ae9d2ae7fde6c0ec63c9
           <div className="lef">
             <div className="logo" onClick={onLogoClick}>
               <img src={home} className="homec1" alt="" />

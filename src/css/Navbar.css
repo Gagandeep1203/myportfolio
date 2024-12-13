@@ -73,10 +73,17 @@ header {
 /* socialmedia css */
 .consocial {
   width: 100vw;
+<<<<<<< HEAD
   height: 100vh; 
   background-color: rgb(255 228 228);
   position: relative;
   
+=======
+  height: 100vh;
+  background-color: #02412f;
+  position: relative;
+  background-image: url(../img/8411810.jpg);
+>>>>>>> ecaf63186867df9c3944ae9d2ae7fde6c0ec63c9
   background-size: cover;
 }
 .hr {
@@ -134,6 +141,7 @@ header {
   width: 50%;
 
   height: 100%;
+<<<<<<< HEAD
 } 
 
 
@@ -209,4 +217,6 @@ header {
 
 .download-btn:focus .download-icon {
   animation: heartbeat 1.5s ease-in-out infinite both;
+=======
+>>>>>>> ecaf63186867df9c3944ae9d2ae7fde6c0ec63c9
 }

@@ -9,6 +9,7 @@ function Social() {
     <div className="consocial">
       <div className="hr"></div>
       <div className="iconbar">
+<<<<<<< HEAD
         <a href="https://www.instagram.com/gagan_deep27?igsh=eHpoM2IxdjIwZHRp">
           <img src={insta} alt="" />
         </a>
@@ -49,6 +50,21 @@ function Social() {
   </a>
 </div>
 
+=======
+        <a href="">
+          <img src={insta} alt="" />
+        </a>
+        <a href="">
+          <img src={linkedln} alt="" />
+        </a>
+        <a href="">
+          <img src={git} alt="" />
+        </a>
+        <a href="">
+          <img src={mail} alt="" />
+        </a>
+      </div>
+>>>>>>> ecaf63186867df9c3944ae9d2ae7fde6c0ec63c9
     </div>
   );
 }
