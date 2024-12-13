@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "../css/proj.css";
-import "../css/pg2p1.css"; 
+import "../css/Pg2p1.css"; 
 function Proj() {
   const spfi = {
     description:
