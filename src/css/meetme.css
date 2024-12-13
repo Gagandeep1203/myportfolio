@@ -18,10 +18,11 @@
   width: 100vw; 
 } 
 .mailcon div { 
+  width: 39%;
+  margin-top: 2rem;
   z-index: 100;
   position: relative;
-  height: 100%;
-  width: 30%;
+  height: 100%; 
   background-color: #433c3c;
   padding: 2rem;
 border-radius: 20px;
@@ -69,7 +70,7 @@ box-shadow: 20px 40px 20px;
  }
  @media (max-width: 768px) {
   .mailcon div {
-    width: 80%; /* Adjust for smaller screens */
+    width: 60%; /* Adjust for smaller screens */
   }
 }
 .cross1, .cross2 {

@@ -32,12 +32,16 @@
       .prjverpg1 { 
         height: 149vh;
     }
-      .rig {        top: -7px;
+      .rig {       
 
         font-size: 0.7rem;
       }
       .lef {
         font-size: 0.7rem;
+      }
+      .work {
+        height: 42vh;
+        bottom: 0rem;
       }
       .workspan h1 {
         font-size: 2.2rem;
