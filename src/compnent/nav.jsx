@@ -19,7 +19,7 @@ function Navbar({ color, onLogoClic }) {
       const children = document.querySelectorAll(".header > *");
 
       children.forEach((child, index) => {
-        const intensity = (index + 1) * 0.2; // Adjust intensity based on child index
+        const intensity = (index + 1) * 0.1; // Adjust intensity based on child index
         const translateX = offsetX * intensity * 60; // Modify 20 for translation distance
         const translateY = offsetY * intensity * 60;
 
@@ -34,7 +34,7 @@ function Navbar({ color, onLogoClic }) {
     };
   }, []);
   return (
-    <header className="header" style={{ backgroundColor: " #6b6b6b;" }}>
+    <header className="header" style={{ backgroundColor: " #6b6b6b" }}>
       <div className="lef">
       <a href=""> <img src={home} className="homec1"
   alt="" /> </a>

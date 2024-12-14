@@ -75,7 +75,7 @@ import Footer from "./compnent/footer.jsx";
 import SpaceBackground from "./pages/meetme.jsx"; 
 import SmoothScroll from 'smooth-scroll';
 import "./css/scroll.css";
-import "./css/cursor.css"; 
+import "./css/cursor.css";  
 
 function App() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -154,7 +154,7 @@ function App() {
           <div
             className="cursor"
             style={{ left: `${position.x}px`, top: `${position.y}px` }}
-          ></div>
+          ></div> 
           {nv ? (
             <Menu onLogoClick={toggleNav} />
           ) : (
