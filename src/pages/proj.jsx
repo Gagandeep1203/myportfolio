@@ -150,7 +150,7 @@ function Proj() {
                 <h1>Notely</h1>
               </div>
               <div className="intro hidden">
-                <a href="">
+                <a href="https://glistening-gumption-ffbed8.netlify.app/">
                   <p>
                     --"Notely is a simple and efficient notes-taking app built with Node.js. It allows users to create, edit, and organize their notes seamlessly. With a clean interface and cloud sync support, it ensures your ideas and to-dos are always accessible."<br />
                    <b>link</b>                    
