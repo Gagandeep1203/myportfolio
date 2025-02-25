@@ -147,14 +147,12 @@ function Proj() {
             </section>
             <section className="projin hidden">
               <div className="head hidden">
-                <h1>Memory Game</h1>
+                <h1>Notely</h1>
               </div>
               <div className="intro hidden">
                 <a href="">
                   <p>
-                    --"Step into the world of mind-bending challenges with
-                    MemoryMaster – a fast-paced memory game designed to test and
-                    enhance your cognitive skills."<br />
+                    --"Notely is a simple and efficient notes-taking app built with Node.js. It allows users to create, edit, and organize their notes seamlessly. With a clean interface and cloud sync support, it ensures your ideas and to-dos are always accessible."<br />
                    <b>link</b>                    
                   </p>
                 </a>
